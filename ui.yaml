@@ -1,0 +1,93 @@
+name: root
+enabled: yes
+layout: fill
+children:
+  - name: margins
+    enabled: yes
+    layout: center width*.8 height*.8
+    children:
+
+        - id: view
+          class: ui.label
+          text: ""
+          layout: top parent.rect.height//len(parent.children)
+
+        - name: upper_row
+          enabled: yes
+          layout: top parent.rect.height//len(parent.children)
+          children:
+            - id: 1
+              class: ui.button
+              layout: left parent.rect.width//len(parent.children)
+              label: "1"
+            - id: 2
+              class: ui.button
+              layout: left parent.rect.width//len(parent.children)
+              label: "2ABC"
+            - id: 3
+              class: ui.button
+              layout: left parent.rect.width//len(parent.children)
+              label: "3DEF"
+        - name: middle_row
+          layout: top parent.rect.height//len(parent.children)
+          enabled: yes
+          children:
+            - id: 4
+              class: ui.button
+              layout: left parent.rect.width//len(parent.children)
+              label: "4GHI"
+            - id: 5
+              class: ui.button
+              layout: left parent.rect.width//len(parent.children)
+              label: "5JKL"
+            - id: 6
+              class: ui.button
+              layout: left parent.rect.width//len(parent.children)
+              label: "6MNO"
+        - name: lower_row
+          layout: top parent.rect.height//len(parent.children)
+          enabled: yes
+          children:
+            - id: 7
+              class: ui.button
+              layout: left parent.rect.width//len(parent.children)
+              label: "7PQRS"
+            - id: 8
+              class: ui.button
+              layout: left parent.rect.width//len(parent.children)
+              label: "8TUV"
+            - id: 9
+              class: ui.button
+              layout: left parent.rect.width//len(parent.children)
+              label: "WXYZ"
+        - name: bottom_row
+          layout: top parent.rect.height//len(parent.children)
+          enabled: yes
+          children:
+            - id: star
+              class: ui.button
+              layout: left parent.rect.width//len(parent.children)
+              label: "*.,"
+            - id: 0
+              class: ui.button
+              layout: left parent.rect.width//len(parent.children)
+              label: "0+ "
+            - id: hash
+              class: ui.button
+              layout: left parent.rect.width//len(parent.children)
+              label: "#"
+
+        - name: bottommost_row_or_something
+          enabled: yes
+          layout: top parent.rect.height//len(parent.children)
+          children:
+            - id: 'delete'
+              class: ui.button
+              lolite_color: [1.0, 1.0, 0.0]
+              layout: left parent.rect.width//len(parent.children)
+              label: "DEL"
+            - id: 'return'
+              class: ui.button
+              lolite_color: [1.0, 1.0, 0.0]
+              layout: left parent.rect.width//len(parent.children)
+              label: "RET"
